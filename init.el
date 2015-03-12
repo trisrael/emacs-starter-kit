@@ -139,3 +139,5 @@
 (setq exec-path (append exec-path (list (concat (getenv "GOPATH") "/bin"))))
 (put 'upcase-region 'disabled nil)
 (global-set-key (kbd "C-x C-f") 'fiplr-find-file)
+(setq fiplr-ignored-globs '((directories (".git" ".svn" "node_modules" "Godeps"))
+                                                        (files ("*.jpg" "*.png" "*.zip" "*~"))))
